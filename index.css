@@ -1,0 +1,41 @@
+#new-book-form {
+    width: 25vw;
+    display: grid;
+    background: salmon;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.label-field-div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 10px;
+}
+
+.radio-button-div {
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+
+#submit-button {
+    margin: 100px;
+    width: 100%;
+    margin: auto;  
+}
+
+#book-display-area{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.book-div {
+    text-align: center;
+    background: cyan;
+    border-radius: 10px;
+    width: 25vw;
+    padding: 10px;
+    
+}
