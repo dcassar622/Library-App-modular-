@@ -53,7 +53,15 @@ const submitNewBook = () => {
 
     // create new book and add it to books array
     let newBook = new Book(bookTitle, bookAuthor, bookPages, bookIsRead, uniqueID);
-    books.push(newBook)
+
+    // check if all form fields are filled
+    const formFieldIDs = ['title', 'author', 'pages'];
+    let allFieldsFilled = formFieldIDs.every(fieldID => 
+        document.getElementById(fieldID).value.trim() !== ''
+    );
+    
+    // if all form fields are filled, submit new book
+    allFieldsFilled ? books.push(newBook) : alert('Please Fill Out All Fields To Submit');
 }
 
 

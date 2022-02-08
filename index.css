@@ -1,3 +1,7 @@
+* {
+    font-family: 'Dekko';
+}
+
 #new-book-form {
     width: 25vw;
     display: grid;
